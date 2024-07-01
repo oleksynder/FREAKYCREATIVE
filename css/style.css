@@ -1,0 +1,344 @@
+/* fonts */
+
+@font-face {
+    font-family: 'MainBold';
+    src: url(../fonts/dharma-gothic-e-exbold.otf);
+}
+
+@font-face {
+    font-family: 'MainRus';
+    src: url(../fonts/ofont.ru_Ramona.ttf);
+}
+
+/* general styles */
+
+.container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url("../images/bg.png");
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 1vh 0 1vh 0;
+}
+
+/* Menu */
+
+.Menu {
+    text-align: left;
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: 'MainRus';
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* header "main" */
+
+header {
+    background-color: rgba(127, 255, 212, 0);
+    width: 100%;
+    height: auto;
+}
+
+.logotype {
+    margin-top: 34vh;
+    margin-bottom: 34vh;
+    width: 500px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header p {
+    text-align: center;
+    font-size: 42px;
+    color: black;
+    font-family: 'MainBold';
+    letter-spacing: 5px;
+}
+
+/* section Main-navigation */
+
+.Main-navigation {
+    margin-top: 75px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 255, 0);
+    margin-bottom: 110px;
+}
+
+.Main-navigation h1 {
+    font-family: 'MainRus';
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 7px;
+    text-align: center;
+    color: #363030;
+    font-size: 175px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+}
+
+.Main-navigation a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.Main-navigation h1:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* footer "main" */
+
+.footer p {
+    font-family: 'MainBold';
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color: #2d2d2d;
+    font-size: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    letter-spacing: 5px;
+}
+
+/* header for other */
+
+.general-header {
+    width: 100%;
+    height: auto;
+}
+
+.general-header a {
+    text-decoration: none;
+}
+
+.general-header img {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 250px;
+}
+
+.general-header p {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-family: 'MainBold';
+    letter-spacing: 5px;
+}
+
+/* footer for other */
+
+.general-footer p {
+    font-family: 'MainBold';
+    text-align: center;
+    color: #3b3b3b;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 6px;
+}
+
+/* section for us */
+
+.About-Us h1 {
+    font-family: 'MainRus';
+    padding-left: 0;
+    margin: 0 25px 0 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.15;
+}
+
+/* section music */
+
+.Album {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 1000px;
+    margin-bottom: 100px;
+}
+
+/* content */
+.ImageContainer {
+    position: relative;
+}
+
+.ContOverlayText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OverlayText {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'MainRus';
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ImageContainer:hover .ContOverlayText {
+    opacity: 1;
+}
+
+.ImageContainer:hover .OverlayText {
+    display: block;
+}
+
+/* section contacts */
+
+.Contacts h1 {
+    font-family: 'MainRus';
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.Contacts img {
+    width: 100px;
+}
+
+.Contacts nav {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Contacts nav a {
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* section video */
+
+.Video h1 {
+    font-family: 'MainRus';
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.15;
+}
+
+.Video {
+    text-align: center;
+}
+
+iframe {
+    text-align: center;
+    width: 1280px;
+    height: 720px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+/* section clothes */
+
+.freaky-clothes {
+    width: 300px;
+    height: auto;
+    margin-bottom: 150px;
+}
+
+.clothes {
+    margin: 0 75px 0 75px;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+.clothes img {vertical-align: middle;}
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+.clothes img {
+    width: 100%;
+}
+
+/* buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
