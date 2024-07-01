@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREAKYCREATIVE</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<div class="container">
+    <a href="main.html"><p class="Menu"> Меню </p></a>
+    <div class="general-header">
+        <p><a href="main.html"> <img src="images/logo.png" alt="Logotype" class="logotype"> </a></p>
+        <p>FREAKYCREATIVE</p>
+    </div>
+    <main>
+        <div class="clothes">
+            <img src="images/slides/slide1.jpg" class="freaky-clothes">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="images/slides/slide2.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/slides/slide3.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/slides/slide4.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/slides/slide5.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/slides/slide6.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/slides/slide7.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/slides/slide8.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/slides/slide9.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                }
+            </script>
+
+        </div>
+        <section class="general-footer">
+            <p> © 2024 FREAKYCREATIVE </p>
+        </section>
+    </main>
+</div>
+</body>
+</html>
